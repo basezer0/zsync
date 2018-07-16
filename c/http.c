@@ -739,7 +739,7 @@ static void range_fetch_connect(struct range_fetch *rf) {
 static void range_fetch_getmore(struct range_fetch *rf) {
     char request[2048];
     int l;
-    int max_range_per_request = 20;
+    int max_range_per_request = 1;
 
     /* Only if there's stuff queued to get */
     if (rf->rangessent == rf->nranges)
